@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./assets/javascript/script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Code of the Day</h1>
+      <h3>Le quotidien des développeurs en herbe!</h3>
+      <p>
+        Bienvenue sur le portail d'inscription à notre liste d'abonement <br />
+        Ici vous pourrez demandser à ce que votre journale préféré vous soit
+        livré chaque jour <br />
+        Dès que nous nos équipes receveront votre demande,vous serez contacter
+        par courrier électronique
+      </p>
+    </header>
+    <main>
+      <h2>Formulaire d' inscription</h2>
+      <div class="inscription">
+        <fieldset>
+          <legend>identité:</legend>
+
+          <div class="radio">
+            <label>
+              <input type="radio" id="monsieur" name="sexe" checked />
+              Monsieur</label
+            >
+            <label>
+              <input type="radio" id="madame" name="sexe" />
+              Madame</label
+            >
+          </div>
+          <table>
+            <tr>
+              <td>Nom:</td>
+              <td><input type="text" name="" value="" /></td>
+            </tr>
+            <tr>
+              <td>Prénom:</td>
+              <td><input type="text" name="" value="" /></td>
+            </tr>
+            <tr>
+              <td>E-mail:</td>
+              <td><input type="text" name="" value="" /></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adresse de facturation:</legend>
+          <table>
+            <tr>
+              <td>Rue:</td>
+              <td>
+                <input type="text" name="rue" list="rueSuggestions" />
+                <datalist id="rueSuggestions"></datalist>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Ville:</td>
+              <td><input type="text" name="ville" value="" /></td>
+              <datalist id="villeSuggestions"></datalist>
+            </tr>
+            <tr>
+              <td>Code postal:</td>
+              <td><input type="text" name="codePostal" value="" /></td>
+              <datalist id="CodepostaleSuggestions"></datalist>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adresse de livraison:</legend>
+          <table>
+            <tr>
+              <td>Rue:</td>
+              <td><input type="text" name="lvrue" list="" /></td>
+            </tr>
+            <tr>
+              <td>Ville:</td>
+              <td><input type="text" name="lvville" value="" /></td>
+              <datalist id="villeSuggestions"></datalist>
+            </tr>
+            <tr>
+              <td>Code postal:</td>
+              <td><input type="text" name="lvcodePostal" value="" /></td>
+              <datalist id="CodepostaleSuggestions"></datalist>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </main>
+    <footer>
+      <p>Rayan Ouerfelli -@code of the day -2023</p>
+    </footer>
+  </body>
+</html>
