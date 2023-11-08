@@ -40,7 +40,6 @@ rue.addEventListener("input", async function () {
       const option = document.createElement("option");
       //option prend la valeur label de mon tableau
       option.value = suggestion.properties.name;
-      option.dataset.codePostal = suggestion.properties.postcode;
       datalist.appendChild(option);
     });
   }
